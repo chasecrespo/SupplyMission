@@ -84,6 +84,9 @@ function draw() {
 if(keyWentUp("right")){
   helicopterSprite.velocityX=0
 }
+	if(keyCode===DOWN_ARROW){
+	Matter.Body.setStatic(packageBody,false);
+}
 
   packageSprite.x= packageBody.position.x 
   packageSprite.y= packageBody.position.y 
