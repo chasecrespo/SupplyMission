@@ -84,7 +84,8 @@ function draw() {
 if(keyWentUp("right")){
   helicopterSprite.velocityX=0
 }
-	if(keyCode===DOWN_ARROW){
+
+if(keyCode===DOWN_ARROW){
 	Matter.Body.setStatic(packageBody,false);
 }
 
@@ -93,7 +94,12 @@ if(keyWentUp("right")){
 
   
   drawSprites();
-  
-  
+    
  
 }
+
+// function keyPressed(){
+// 	if(keyCode===DOWN_ARROW){
+// 		Matter.Body.setStatic(packageBody,false);
+// 	}
+// }
